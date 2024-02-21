@@ -14,21 +14,21 @@ const Navbar = () => (
   >
     <div className="absolute w-[50%] inset-0 gradient-01" />
 
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
+    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 select-none`}>
       <img
         src="/search.svg"
         alt="search"
         className="w-[24px] h-[24px] object-contain"
       />
 
-      <h2 className="text-white font-extrabold text-[24px] leading-[30px]">
+      <h2 className="text-white font-extrabold text-[24px] leading-[30px] pointer-events-none">
         UNIVERSE-X
       </h2>
 
       <img
         src="/menu.svg"
         alt="menu"
-        className="w-[24px] h-[24px] object-contain"
+        className="w-[24px] h-[24px] object-contain cursor-pointer"
       />
     </div>
   </motion.nav>
